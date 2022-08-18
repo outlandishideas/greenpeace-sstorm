@@ -15,15 +15,23 @@
       </ion-header>
     
       <div id="container">
+        <h3>About {{ $route.params.company }}</h3>
+        <img src="/assets/Sarah.png">
         <ul>
-          <li>CEO: Bob bobson</li>
-          <li>Dividends: £200,000</li>
-          <li>Executive pay: £1,100,000</li>
+          <li>CEO: Sarah Bentley</li>
+          <li>Salary: £750,000 p/a</li>
+          <li>Bonus: 120% of salary</li>
         </ul>
 
-        <p>Lorem ipum some info on responsibility?</p>
+        <p>The company's sewage treatment plants don't have enough capacity, so they overflow into rivers and the ocean.</p>
 
-        <p><a href="https://twitter.com" target="_blank">Share with MP</a></p>
+        <p>This negligence comes down to greed and profiteering on behalf of their shareholders.</p>
+
+        <p>Help us expose them and protect our rivers and seas.</p>
+
+        <p>
+          <ion-button expand href="https://twitter.com" target="_blank">Share now</ion-button>
+        </p>
       </div>
     </ion-content>
   </ion-page>

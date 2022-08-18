@@ -14,25 +14,23 @@
       </ion-header>
 
       <div id="container">
-        <ion-list>
-          <ion-item>
-            <p>Your postcode: <strong>N1 1AA</strong>.</p>
-          </ion-item>
-          <ion-item>
-            <p>Sewage spill likely <strong>this Saturday</strong>.</p>
-            <capacitor-google-map id="map"></capacitor-google-map>
-          </ion-item>
-          <ion-item>
-            <ion-button router-link="/pressure/Thames Water">Pressure Thame Water to do something</ion-button>
-          </ion-item>
-        </ion-list>
+        <ion-text>
+          <p><strong>This Wednesday</strong>, Thames Water is forecast to spill 12 million litres of sewage into the <strong>River Avon</strong>.</p>
+          <p>The company's sewage treatment plants don't have enough capacity, so they overflow into rivers and the ocean.</p>
+          <p>This negligence comes down to greed and profiteering on behalf of their shareholders.</p>
+          <p>Help us expose them and protect our rivers and seas.</p>
+        </ion-text>
+
+        <capacitor-google-map id="map"></capacitor-google-map>
+          
+        <ion-button expand router-link="/pressure/Thames Water">Pressure Thame Water to do something</ion-button>
       </div>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 import { GoogleMap } from '@capacitor/google-maps';
@@ -43,8 +41,6 @@ export default defineComponent({
     IonButton,
     IonContent,
     IonHeader,
-    IonItem,
-    IonList,
     IonPage,
     IonTitle,
     IonToolbar
@@ -76,6 +72,7 @@ export default defineComponent({
 
 <style scoped>
 capacitor-google-map {
+  margin: 1rem auto;
   display: inline-block;
   width: 275px;
   height: 400px;
@@ -83,6 +80,8 @@ capacitor-google-map {
 
 #container {
   text-align: center;
+  display: flex;
+  flex-direction: column;
   
   position: absolute;
   left: 0;
