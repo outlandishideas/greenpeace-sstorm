@@ -38,7 +38,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   // Step 3
   {
-    path: '/pressure',
+    path: '/pressure/:company',
     name: 'Pressure Leaders',
     component: PressurePage,
   },

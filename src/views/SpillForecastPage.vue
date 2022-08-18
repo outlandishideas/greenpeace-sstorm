@@ -23,7 +23,7 @@
             <capacitor-google-map id="map"></capacitor-google-map>
           </ion-item>
           <ion-item>
-            <ion-button router-link="/pressure">Pressure companies to do something</ion-button>
+            <ion-button router-link="/pressure/Thames Water">Pressure Thame Water to do something</ion-button>
           </ion-item>
         </ion-list>
       </div>
