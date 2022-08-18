@@ -1,0 +1,7 @@
+{
+  "name": "shitstorm",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
