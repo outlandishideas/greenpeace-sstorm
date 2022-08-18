@@ -15,13 +15,21 @@
       </ion-header>
     
       <div id="container">
-        <h3>About {{ $route.params.company }}</h3>
-        <img src="/assets/Sarah.png">
-        <ul>
-          <li>CEO: Sarah Bentley</li>
-          <li>Salary: £750,000 p/a</li>
-          <li>Bonus: 120% of salary</li>
-        </ul>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>About {{ $route.params.company }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <img src="/assets/Sarah.png">
+            <ion-text>
+              <ul>
+                <li>CEO: Sarah Bentley</li>
+                <li>Salary: £750,000 p/a</li>
+                <li>Bonus: 120% of salary</li>
+              </ul>
+            </ion-text>
+          </ion-card-content>
+        </ion-card>
 
         <p>The company's sewage treatment plants don't have enough capacity, so they overflow into rivers and the ocean.</p>
 
@@ -38,15 +46,21 @@
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonHeader, IonPage, IonText, IonTitle, IonToolbar } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'PressurePage',
   components: {
+    IonButton,
+    IonCard,
+    IonCardContent,
+    IonCardHeader,
+    IonCardTitle,
     IonContent,
     IonHeader,
     IonPage,
+    IonText,
     IonTitle,
     IonToolbar
   }
@@ -56,12 +70,18 @@ export default defineComponent({
 <style scoped>
 #container {
   text-align: center;
+  display: flex;
+  flex-direction: column;
   
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+ion-button {
+  margin-top: 1rem;
 }
 
 #container strong {
