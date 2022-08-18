@@ -1,21 +1,21 @@
+<!-- Presents data about responsible targets and a way to contact them. -->
 <template>
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>Blank</ion-title>
+        <ion-title>Apply some pressure!</ion-title>
       </ion-toolbar>
     </ion-header>
     
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Blank</ion-title>
+          <ion-title size="large">Apply some pressure!</ion-title>
         </ion-toolbar>
       </ion-header>
     
       <div id="container">
-        <strong>Ready to create an app?</strong>
-        <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+        <p>Lorem.</p>
       </div>
     </ion-content>
   </ion-page>
@@ -26,7 +26,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'HomePage',
+  name: 'PressurePage',
   components: {
     IonContent,
     IonHeader,
