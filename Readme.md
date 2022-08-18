@@ -4,6 +4,14 @@
 
 Ionic + Vue 3 with TypeScript.
 
+## WIP
+
+Some obvious next things to fix:
+
+* simulated SMS scaling is off
+* page heights are off – need to sort vertical scaling especially on mobile
+* styling! It should be super quick to e.g. make it green now
+
 ## Run locally
 
 ionic serve
