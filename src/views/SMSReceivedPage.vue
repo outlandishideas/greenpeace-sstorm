@@ -8,7 +8,7 @@
     
     <ion-content :fullscreen="true">
       <div id="container" @click="goToForecast()">
-        <p>Fake SMS here</p>
+        <img src="/assets/sms.png">
       </div>
     </ion-content>
   </ion-page>

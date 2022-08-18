@@ -12,9 +12,16 @@
           <ion-title size="large">You've registered</ion-title>
         </ion-toolbar>
       </ion-header>
+
+      <h3>Phew</h3>
+      <ion-text wrap>
+        <p>There are no sewage spills happening near you in the next 7 days. Spills tend to happen less in dry weather.</p>
+        <p>But your nearest sewage works, Slingsby Pumping Station, has spilled 243 times in the past year.</p>
+        <p>We'll send an alert to your mobile number before the next spill.</p>
+      </ion-text>
     
       <div id="container" @click="goToSimulatedSms()">
-        <p>We'll let you know about adverse weather events likely to cause spills.</p>
+        <!-- <p>We'll let you know about adverse weather events likely to cause spills.</p> -->
       </div>
     </ion-content>
   </ion-page>

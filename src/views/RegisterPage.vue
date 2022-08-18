@@ -14,10 +14,15 @@
       </ion-header>
     
       <div id="container">
+        <ion-text wrap>
+          <p>Every week, water companies spiIll millions of gallons of sewage into our rivers and seas. It doesn't have to be this way.</p>
+          <p>Find out when water companies are about to pollute your local river, and join the movement for change.</p>
+          <p>Is your local river in danger? Enter your postcode to find out.</p>
+        </ion-text>
         <form>
           <ion-list>
             <ion-item>
-              <ion-label for="mobile">Mobile number</ion-label>
+              <ion-label for="mobile">Your mobile number</ion-label>
               <ion-input
                 id="mobile"
                 autocomplete="tel"
@@ -27,7 +32,7 @@
             </ion-item>
 
             <ion-item>
-              <ion-label for="postcode">Postcode</ion-label>
+              <ion-label for="postcode">Your postcode</ion-label>
               <ion-input
                 id="postcode"
                 autocomplete="postal-code"
